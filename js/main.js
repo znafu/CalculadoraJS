@@ -7,13 +7,12 @@ function calculadora() {
       document.getElementById("resultado").innerHTML = "Lo sentimos los valores no pueden ser nulos";
     }
 
-    var resultado;
+    var resultado = null;
+    operator = operator.toLowerCase();
     if (operator === "+" || operator === "sum" || operator === "suma"){
-      resultado = firstValue + secondValue;
+      document.getElementById("resultado").innerHTML = firstValue + secondValue;
     }
-
-    if (person !== null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
+    else if (operator === "-" || operator === "men" || operator === "menos" || operator === "min" || operator === "resta"){
+      document.getElementById("resultado").innerHTML = firstValue - secondValue;
     }
 }
