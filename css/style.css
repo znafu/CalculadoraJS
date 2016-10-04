@@ -1,22 +1,97 @@
-#myButtonCal {
-	background-color:#4593c7;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #196cab;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #185c80;
+* {
+    margin: 0, padding: 0
 }
-#myButtonCal:hover {
-	background-color:#467299;
+
+html, body {
+	height: 100%;
+	min-height: 100%;
 }
-#myButtonCal:active {
-	position:relative;
-	top:1px;
+
+main{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    direction: rtl;
+    width: 250px;
+    text-align: left;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: top;
+}
+
+ul li {
+    display: inline-block;
+    margin: 16px;
+    line-height: 0;
+    font-size: 0;
+}
+
+#input {
+		width: 200px;
+		display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "Arial", Helvetica;
+    color: rgba(0, 142, 198, 1);
+    background: rgba(252, 252, 252, 1);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+#input2 {
+		width: 200px;
+		display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "Arial", Helvetica;
+    color: rgba(0, 142, 198, 1);
+    background: rgba(252, 252, 252, 1);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+#operators {
+    width: 200px;
+}
+
+
+/*botones*/
+
+.myButtonCal {
+    width: 48px;
+    height: 48px;
+    border-radius: 10;
+    border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #2f2f36;
+    font-size: 17px;
+    background: #c3cacf;
+    text-decoration: none;
+}
+
+.myButtonCal2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 10;
+    border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    background: #44494d;
+    text-decoration: none;
+}
+
+#clear {
+	background-color: red;
 }

@@ -10,11 +10,46 @@
 </head>
 
 <body>
-    <center>
-        <h1>Calculadora Javascript</h1>
-        <p>Presiona el boton para iniciar la calculadora.</p>
-        <h2 id="resultado"></h2>
-        <button id="myButtonCal" onclick="calculadora()">Iniciar Calculadora</button>
-    </center>
+    <main>
+      <section id="io">
+        <input id="input" type="text">
+        <input id="input2" type="text">
+        <output id="result"></output>
+        <p id="error"></p>
+      <section id="controlpad">
+      <ul id="numbers">
+        <li><button class="myButtonCal">9</button></li>
+        <li><button class="myButtonCal">8</button></li>
+        <li><button class="myButtonCal">7</button></li>
+        <li><button class="myButtonCal">6</button></li>
+        <li><button class="myButtonCal">5</button></li>
+        <li><button class="myButtonCal">4</button></li>
+        <li><button class="myButtonCal">3</button></li>
+        <li><button class="myButtonCal">2</button></li>
+        <li><button class="myButtonCal">1</button></li>
+        <li><button class="myButtonCal">0</button></li>
+      </ul>
+
+      <ul id="operators">
+        <li><button class="myButtonCal2">+</button></li>
+        <li><button class="myButtonCal2">*</button></li>
+        <li><button class="myButtonCal2">-</button></li>
+        <li><button class="myButtonCal2">/</button></li>
+        <li><button class="myButtonCal2">,</button></li>
+        <li><button class="myButtonCal2">%</button></li>
+        <li><button class="myButtonCal2">=</button></li>
+        <li><button id="clear" class="myButtonCal2">C</button></li>
+      </ul>
+      </section>
+    </section>
+    </main>
 </body>
 </html>
+
+
+<!--<center>
+    <h1>Calculadora Javascript</h1>
+    <p>Presiona el boton para iniciar la calculadora.</p>
+    <h2 id="resultado"></h2>
+    <button id="myButtonCal" onclick="calculadora()">Iniciar Calculadora</button>
+</center>-->

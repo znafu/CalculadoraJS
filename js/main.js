@@ -1,18 +1,28 @@
-function calculadora() {
-    var firstValue = prompt("Ingrese el primer valor a operar:");
-    var secondValue = prompt("Ingrese el segundo valor a operar:");
-    var operator = prompt("Ingrese el operador:");
+document.addEventListener("DOMContentLoaded", function(event) {
 
-    if (firstValue === null || secondValue === null || operator === null || firstValue === "NaN" || secondValue === "NaN"){
-      document.getElementById("resultado").innerHTML = "Lo sentimos los valores no pueden ser nulos";
-    }
+    var output = document.getElementById("result");
+    var controlpad = document.getElementById("controlpad");
+});
 
-    var resultado = null;
-    operator = operator.toLowerCase();
-    if (operator === "+" || operator === "sum" || operator === "suma"){
-      document.getElementById("resultado").innerHTML = firstValue + secondValue;
+calculator = {
+    op1: null,
+    op2: null,
+    operator: null,
+    check_input: function() {
+        var input = document.getElementById('input');
+        var input_text = input.textContent;
+        var errors = document.querySelector("#error");
+        var input_number = Number(input_text);
+        if (input_number !== NaN) {
+            if (this.op1 === null)
+                this.op1 = input_number;
+        } else {
+            this.op1 = input_number;
+        }
     }
-    else if (operator === "-" || operator === "men" || operator === "menos" || operator === "min" || operator === "resta"){
-      document.getElementById("resultado").innerHTML = firstValue - secondValue;
-    }
+};
+
+var button_operators = calculator.querySelector("#operators button");
+for (var button in button_operators) {
+    button.addEventListener("click", calculator.check_input);
 }
